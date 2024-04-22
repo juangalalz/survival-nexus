@@ -15,6 +15,7 @@ export default function Pagination({
   const searchParams = useSearchParams();
   const { replace } = useRouter();
   const currentPage = Number(searchParams.get('page')) || 1;
+  console.log('currentPage', currentPage);
 
   const goPageURL = (pageNumber: number | string) => {
     const params = new URLSearchParams(searchParams);

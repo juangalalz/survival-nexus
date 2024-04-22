@@ -5,7 +5,7 @@ function paginate(array: any[], pageSize: number, pageNumber: number) {
 }
 
 const ITEMS_PER_PAGE = 10;
-export async function fetchSurvivos(currentPage: number) {
+export function fetchSurvivors(currentPage: number) {
   const paginatedSurvivors = paginate(survivors, ITEMS_PER_PAGE, currentPage);
   const survivorsLength = survivors.length;
   const totalPages = survivorsLength / ITEMS_PER_PAGE;

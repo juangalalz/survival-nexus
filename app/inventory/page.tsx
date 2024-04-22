@@ -9,13 +9,13 @@ import { Survivor } from '@/app/lib/definitions';
 
 import styles from './styles.module.scss';
 
-import { fetchSurvivos } from '@/app/lib/data';
+import { fetchSurvivors } from '@/app/lib/data';
 
 export const metadata: Metadata = {
   title: 'List of Survivors Inventories',
 };
 
-export default async function Page({
+export default function Page({
   searchParams,
 }: {
   searchParams?: {
@@ -24,9 +24,8 @@ export default async function Page({
   };
 }) {
   const currentPage = Number(searchParams?.page) || 1;
-  const { survivors, totalPages, survivorsLength } = await fetchSurvivos(
-    currentPage
-  );
+  const { survivors, totalPages, survivorsLength } =
+    fetchSurvivors(currentPage);
 
   return (
     <div>
