@@ -1,0 +1,63 @@
+@use '../variables.module.scss';
+
+.header {
+  height: 65px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: variables.$tuna-color;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 180px;
+}
+
+.logoText {
+  font-weight: 500;
+  font-size: 16px;
+  color: variables.$alabaster-color;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: variables.$alabaster-color;
+  margin-right: 14px;
+}
+
+.ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  padding: 13px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  color: variables.$alabaster-color;
+  text-decoration: none;
+  border-radius: 4px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.linkSelected {
+  background-color: variables.$mirage-color;
+}

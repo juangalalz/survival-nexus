@@ -1,0 +1,47 @@
+@use '../variables.module.scss';
+
+.button {
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid variables.$mercury-color;
+  border-radius: 4px;
+  color: variables.$ebony-clay-color;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 12px;
+  box-shadow: 0px 1px 2px 0px #18181c0a;
+  box-shadow: 0px 3px 4px -5px #18181c08;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: 500;
+  color: variables.$carbon-grey-color;
+  span {
+    font-weight: 600;
+    color: variables.$dark-jungle-green-color;
+  }
+}

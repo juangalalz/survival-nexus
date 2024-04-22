@@ -1,0 +1,41 @@
+@use './variables.module.scss';
+
+body {
+  margin: 65px 0 65px 0;
+  padding-top: 61px;
+  background-color: variables.$alabaster-color;
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: variables.$white-smoke-color;
+}
+
+th {
+  padding: 11px 24px;
+  font-weight: 500;
+  font-size: 12px;
+  color: variables.$star-dust-color;
+}
+
+td {
+  padding: 14px 24px;
+}
+
+tbody tr,
+tfoot tr {
+  background-color: variables.$white-color;
+}
+
+tbody tr {
+  border-bottom: 1px solid variables.$soft-peach-color;
+}

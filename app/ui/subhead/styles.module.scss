@@ -1,0 +1,27 @@
+@use '../variables.module.scss';
+
+.subheadContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  color: variables.$ebony-clay-color;
+  margin: 0;
+}
+
+.descriptionContainer {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: variables.$ebony-clay-color;
+}

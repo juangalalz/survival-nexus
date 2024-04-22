@@ -1,0 +1,39 @@
+@use '../variables.module.scss';
+
+.statusItemcontainer {
+  display: flex;
+}
+
+.statusItem {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  background-color: variables.$aqua-squeeze-color;
+  border-radius: 50px;
+  padding: 10px 10px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: variables.$shamrock-green-color;
+}
+
+.statusText {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: variables.$shamrock-green-color;
+}
+
+.red {
+  background-color: variables.$amour-color;
+  .dot {
+    background-color: variables.$carmine-pink-color;
+  }
+  .statusText {
+    color: variables.$carmine-pink-color;
+  }
+}

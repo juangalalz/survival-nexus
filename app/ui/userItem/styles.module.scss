@@ -1,0 +1,13 @@
+@use '../variables.module.scss';
+
+.userItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+  color: variables.$ebony-clay-color;
+}
